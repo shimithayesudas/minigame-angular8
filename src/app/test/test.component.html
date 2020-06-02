@@ -1,0 +1,9 @@
+<p>Welcome {{name}}!</p>
+<p>{{"Welcome" + name}}</p>
+<p>{{name.length}}</p>
+<p>{{name.toUpperCase()}}</p>
+<h2 [class.text-danger]="hasError">{{greetUser()}}</h2>
+<input [disabled]="isDisabled" [id]="myId" type="text" value={{name}}>
+<h2 [ngClass] = "messageClasses">Message</h2>
+<button (click)="getMessage($event)">Click me</button>
+{{message}}
